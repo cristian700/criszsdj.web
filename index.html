@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090610">
+  <meta name="description" content="CRISZSDJ — DJ para eventos, fiestas privadas y boliches. Consultas y contrataciones por WhatsApp.">
+  <title>CRISZSDJ | DJ & Eventos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090610;--panel:#151020;--purple:#a855f7;--pink:#e879f9;--text:#f8f5ff;--muted:#b7acc7}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 50% 0%,#32104e 0%,var(--bg) 46%);color:var(--text);font-family:Montserrat,system-ui,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(100% - 32px,980px);margin:auto}
+    header{padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:900;letter-spacing:2px}.brand span{color:var(--pink)}nav{display:flex;gap:18px;font-size:12px;color:var(--muted)}nav a:hover{color:white}
+    .hero{text-align:center;padding:62px 0 48px}.eyebrow{display:inline-block;border:1px solid #a855f766;background:#a855f71a;color:#e9b8ff;border-radius:99px;padding:8px 13px;font-size:11px;letter-spacing:2px;font-weight:700}
+    h1{font-size:clamp(42px,9vw,86px);line-height:.98;letter-spacing:-3px;margin:22px 0 14px;font-weight:900}h1 span{display:block;color:var(--pink);text-shadow:0 0 36px #a855f766}
+    .sub{color:var(--muted);line-height:1.8;max-width:570px;margin:0 auto 26px;font-size:14px}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 19px;border-radius:12px;font-weight:800;font-size:13px;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#9333ea,#d946ef);box-shadow:0 8px 28px #a855f733}.secondary{border:1px solid #ffffff2b;background:#ffffff08}
+    .hero-art{height:190px;max-width:760px;margin:38px auto 0;border:1px solid #ffffff18;border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(120deg,#170d27,#32104a 48%,#0b0712);display:grid;place-items:center}
+    .hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;filter:blur(3px);opacity:.8}.hero-art:before{width:250px;height:250px;background:#8b5cf6;left:8%;top:30%;opacity:.18}.hero-art:after{width:280px;height:280px;background:#ec4899;right:6%;top:-40%;opacity:.16}
+    .equalizer{height:100px;display:flex;align-items:center;gap:6px;position:relative;z-index:1}.equalizer i{display:block;width:7px;border-radius:99px;background:linear-gradient(#f0abfc,#9333ea);box-shadow:0 0 18px #c026d355}.equalizer i:nth-child(6n+1){height:28px}.equalizer i:nth-child(6n+2){height:55px}.equalizer i:nth-child(6n+3){height:82px}.equalizer i:nth-child(6n+4){height:43px}.equalizer i:nth-child(6n+5){height:68px}.equalizer i:nth-child(6n){height:35px}
+    section{padding:44px 0}.section-top{text-align:center;margin-bottom:24px}.kicker{color:var(--pink);font-size:10px;letter-spacing:3px;font-weight:800}.section-top h2{font-size:clamp(26px,5vw,38px);margin:10px 0}.section-top p{color:var(--muted);font-size:13px;line-height:1.7}
+    .genres{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}.chip{padding:10px 13px;border:1px solid #ffffff18;border-radius:99px;background:#ffffff06;font-size:12px;color:#e6d9f4}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{min-height:190px;border:1px solid #ffffff17;border-radius:16px;background:linear-gradient(145deg,#20142f,#100b19);overflow:hidden;position:relative;display:flex;align-items:end;padding:17px}.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#08040de8,transparent 75%)}.tile .tiletext{position:relative;z-index:1}.tile strong{display:block;font-size:13px}.tile small{display:block;color:#c9bbd8;margin-top:5px;font-size:11px}.tile .num{position:absolute;right:15px;top:14px;color:#e9b8ff;font-size:11px;z-index:2}
+    .socials{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.social{border:1px solid #ffffff18;border-radius:14px;padding:19px;background:#ffffff06;display:flex;align-items:center;gap:12px;transition:.2s}.social:hover{background:#a855f71c;border-color:#a855f766}.social .ico{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:#a855f722;color:#e9b8ff;font-weight:900}.social strong{font-size:13px;display:block}.social small{color:var(--muted);font-size:11px}
+    .contact{background:linear-gradient(120deg,#26103b,#140b20);border:1px solid #a855f744;border-radius:22px;padding:34px 22px;text-align:center}.contact h2{font-size:clamp(25px,5vw,38px);margin:10px 0}.contact p{color:var(--muted);font-size:13px;line-height:1.8;margin:0 auto 23px;max-width:500px}
+    footer{padding:26px 0 35px;text-align:center;color:#8f829e;font-size:11px;border-top:1px solid #ffffff10;margin-top:30px}
+    @media(max-width:650px){nav{gap:10px;font-size:10px}.grid{grid-template-columns:1fr 1fr}.tile{min-height:155px}.socials{grid-template-columns:1fr}.hero{padding-top:44px}.hero-art{height:145px}.equalizer{transform:scale(.8)}}
+    @media(max-width:390px){nav a:nth-child(2){display:none}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="#inicio">CRISZS<span>DJ</span></a>
+    <nav><a href="#sobre-mi">Sobre mí</a><a href="#galeria">Galería</a><a href="#redes">Redes</a><a href="#contacto">Contrataciones</a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="inicio">
+      <span class="eyebrow">DJ · EVENTOS · OPEN FORMAT</span>
+      <h1>SUBÍ EL VOLUMEN.<span>VIVÍ LA NOCHE.</span></h1>
+      <p class="sub">Soy CRISZSDJ. Música, energía y mezclas para que cada evento tenga su propio sonido. Consultá disponibilidad para tu próxima fecha.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/5491166033882?text=Hola%20CriszsDJ%2C%20quiero%20consultar%20por%20una%20contrataci%C3%B3n." target="_blank" rel="noopener">↗ Contrataciones por WhatsApp</a>
+        <a class="btn secondary" href="https://www.instagram.com/criszsdj/" target="_blank" rel="noopener">◎ Ver Instagram</a>
+      </div>
+      <div class="hero-art" aria-label="Visualizador musical decorativo"><div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    </section>
+    <section class="wrap" id="sobre-mi">
+      <div class="section-top"><span class="kicker">EL SONIDO DE LA FIESTA</span><h2>Un set para cada momento</h2><p>Una propuesta versátil para mantener la pista arriba y conectar con el público.</p></div>
+      <div class="genres"><span class="chip">Reggaetón</span><span class="chip">RKT</span><span class="chip">Cumbia</span><span class="chip">Guaracha</span><span class="chip">Cachengue</span><span class="chip">Old School</span><span class="chip">Open Format</span></div>
+    </section>
+    <section class="wrap" id="galeria">
+      <div class="section-top"><span class="kicker">EN ACCIÓN</span><h2>Galería</h2><p>Este espacio está listo para tus fotos de eventos, cabina y equipos. Reemplazá las tarjetas con tus propias imágenes.</p></div>
+      <div class="grid">
+        <div class="tile"><span class="num">01 / FOTO</span><div class="tiletext"><strong>En la cabina</strong><small>Tu foto tocando</small></div></div>
+        <div class="tile"><span class="num">02 / FOTO</span><div class="tiletext"><strong>La energía del evento</strong><small>Tu público y la pista</small></div></div>
+        <div class="tile"><span class="num">03 / FOTO</span><div class="tiletext"><strong>Setup DJ</strong><small>Tus equipos</small></div></div>
+      </div>
+    </section>
+    <section class="wrap" id="redes">
+      <div class="section-top"><span class="kicker">SEGUIME</span><h2>Conectemos</h2><p>Encontrá mis videos, mezclas y novedades en redes.</p></div>
+      <div class="socials">
+        <a class="social" href="https://www.instagram.com/criszsdj/" target="_blank" rel="noopener"><span class="ico">IG</span><span><strong>Instagram</strong><small>@criszsdj</small></span></a>
+        <a class="social" href="https://www.tiktok.com/@criszsdj" target="_blank" rel="noopener"><span class="ico">TK</span><span><strong>TikTok</strong><small>@criszsdj</small></span></a>
+        <a class="social" href="https://www.youtube.com/results?search_query=CRISZSDJ" target="_blank" rel="noopener"><span class="ico">YT</span><span><strong>YouTube</strong><small>Buscá CRISZSDJ</small></span></a>
+      </div>
+    </section>
+    <section class="wrap" id="contacto">
+      <div class="contact"><span class="kicker">RESERVÁ TU FECHA</span><h2>¿Armamos la próxima fiesta?</h2><p>Escribime para consultar disponibilidad y contarme qué tipo de evento estás organizando.</p><a class="btn primary" href="https://wa.me/5491166033882?text=Hola%20CriszsDJ%2C%20quiero%20consultar%20por%20una%20contrataci%C3%B3n." target="_blank" rel="noopener">✆ Hablar por WhatsApp</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year">2026</span> CRISZSDJ · DJ & Eventos · Hecho para sonar fuerte.</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
